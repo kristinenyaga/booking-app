@@ -1,0 +1,17 @@
+# Ignore common build artifacts and dependencies
+node_modules/
+build/
+dist/
+
+# Ignore any environment-specific files
+.env
+
+# Ignore client-specific files and folders
+/client/node_modules/
+/client/build/
+/client/dist/
+
+# Ignore API-specific files and folders
+/api/node_modules/
+/api/build/
+/api/dist/
