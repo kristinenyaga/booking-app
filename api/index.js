@@ -23,6 +23,7 @@ app.use(cookieParser());
 // Logging middleware
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
+// routes
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/hotels", verifyToken,verifyAdmin,hotelsRouter);
